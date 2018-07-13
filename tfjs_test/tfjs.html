@@ -1,0 +1,54 @@
+<html>
+<head>
+	<script src = "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.7"></script>
+<!-- 	<style>
+      #content {
+        padding: 15px;
+      }
+      .prediction-canvas{
+        width: 100px;
+      }
+      .pred {
+        font-size: 20px;
+        line-height: 25px;
+        width: 100px;
+      }
+      .pred-correct {
+        background-color: #00cf00;
+      }
+      .pred-incorrect {
+        background-color: red;
+      }
+      .pred-container {
+        display: inline-block;
+        width: 100px;
+        margin: 10px;
+      }
+      .chart {
+        display: inline-block;
+        height: 500px;
+        width: 500px;
+      }
+    </style> -->
+</head>
+
+<body>
+	<script type="text/javascript">
+		// 需要先关闭google 的安全模式 cmd"C:\Users\Tong\AppData\Local\Google\Chrome\Application\chrome.exe" --user-data-dir="C://Chrome dev session" --disable-web-security
+		(async () => {
+
+			const model = await tf.loadModel('http://127.0.0.1:8000/keras_model/model.json')
+			// console.log(model.layers)
+			// console.log(model.predict(tf.tensor2d([1],[1,400])).dataSync())
+		})();
+		
+	</script>
+<!-- 	<div id="content">
+      <h3>TensorFlow.js: Train MNIST with the Layers API</h3>
+      <div id="status">Loading data...</div>
+      <div id="lossChart" class="chart"></div>
+      <div id="accuracyChart" class="chart"></div>
+      <div id="images"></div>
+    </div> -->
+</body>
+<html>
